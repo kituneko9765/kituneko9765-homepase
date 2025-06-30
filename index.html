@@ -28,11 +28,16 @@
       color: white;
       max-width: 90%;
       width: 450px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* 中央寄せ */
+      text-align: center;  /* テキスト中央 */
     }
 
     .profile-header {
       display: flex;
       align-items: center;
+      justify-content: center; /* 横並びを中央揃え */
       margin-bottom: 20px;
     }
 
@@ -41,7 +46,7 @@
       height: 100px;
       border-radius: 50%;
       object-fit: cover;
-      margin-right: 20px;
+      margin-right: 15px;
     }
 
     .profile-header h1 {
@@ -50,8 +55,8 @@
     }
 
     .profile p {
-      text-align: left;
       line-height: 1.6;
+      margin: 5px 0;
     }
   </style>
 </head>
