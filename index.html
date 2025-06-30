@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>kituneko9765</title>
-  <!-- Font Awesome（アイコン表示用） -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   <style>
     html, body {
       margin: 0;
@@ -29,7 +27,6 @@
       padding: 30px;
       border-radius: 20px;
       color: white;
-      max-width: 90%;
       width: 450px;
       display: flex;
       flex-direction: column;
@@ -42,6 +39,7 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 20px;
+      gap: 15px;
     }
 
     .profile-header img {
@@ -49,7 +47,6 @@
       height: 100px;
       border-radius: 50%;
       object-fit: cover;
-      margin-right: 15px;
     }
 
     .profile-header h1 {
@@ -72,44 +69,60 @@
       gap: 10px;
       width: 80%;
       padding: 12px 0;
-      background-color: #ffffff33;
       color: white;
       text-decoration: none;
       border-radius: 8px;
-      transition: background-color 0.3s;
       font-size: 18px;
-      line-height: 1.2;
+      background-color: rgba(255, 255, 255, 0.2);
+      transition: background-color 0.3s, transform 0.2s;
     }
 
     .links a:hover {
-      background-color: #ffffff55;
+      transform: scale(1.05);
+    }
+
+    .links a.twitter:hover {
+      background-color: #1DA1F2;
+    }
+
+    .links a.youtube:hover {
+      background-color: #FF0000;
+    }
+
+    .links a.discord:hover {
+      background-color: #5865F2;
     }
 
     .links i {
       font-size: 20px;
-      vertical-align: middle;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
+    }
+
+    .copyright {
+      margin-top: 20px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
     }
   </style>
 </head>
 <body>
   <div class="profile">
     <div class="profile-header">
-      <img src="https://cdn.discordapp.com/attachments/1345822080427495485/1388898569385410580/kituneko9765_head.png?ex=6862a817&is=68615697&hm=772e9e8cb0db9060641665ee1f4dc9157631b17aac5a13b25ec3d38406a4e878&" alt="skin_head">
+      <img src="https://cdn.discordapp.com/attachments/1345822080427495485/1388898569385410580/kituneko9765_head.png?ex=6862a817&is=68615697&hm=772e9e8cb0db9060641665ee1f4dc9157631b17aac5a13b25ec3d38406a4e878&" alt="profile image">
       <h1>キツねこ</h1>
     </div>
     <div class="links">
-      <a href="https://x.com/kituneko9765" target="_blank">
+      <a href="https://x.com/kituneko9765" target="_blank" class="twitter">
         <i class="fab fa-twitter"></i> Twitter
       </a>
-      <a href="https://www.youtube.com/@kituneko9765" target="_blank">
+      <a href="https://www.youtube.com/@kituneko9765" target="_blank" class="youtube">
         <i class="fab fa-youtube"></i> YouTube
       </a>
-      <a href="http://discordapp.com/users/863276065828503554" target="_blank">
+      <a href="http://discordapp.com/users/863276065828503554" target="_blank" class="discord">
         <i class="fab fa-discord"></i> Discord
       </a>
+    </div>
+    <div class="copyright">
+      © 2025 Kituneko9765. All rights reserved.
     </div>
   </div>
 </body>
