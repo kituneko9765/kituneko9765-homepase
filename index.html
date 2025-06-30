@@ -23,27 +23,44 @@
 
     .profile {
       background-color: rgba(0, 0, 0, 0.6);
-      padding: 40px;
+      padding: 30px;
       border-radius: 20px;
-      text-align: center;
       color: white;
       max-width: 90%;
-      width: 400px;
+      width: 450px;
     }
 
-    .profile img {
-      width: 120px;
-      height: 120px;
+    .profile-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .profile-header img {
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 20px;
+      margin-right: 20px;
+    }
+
+    .profile-header h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .profile p {
+      text-align: left;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
   <div class="profile">
-    <img src="https://cdn.discordapp.com/attachments/1345822080427495485/1388898569385410580/kituneko9765_head.png?ex=6862a817&is=68615697&hm=772e9e8cb0db9060641665ee1f4dc9157631b17aac5a13b25ec3d38406a4e878&" alt="skin_head">
-    <h1>キツねこ</h1>
+    <div class="profile-header">
+      <img src="https://cdn.discordapp.com/attachments/1345822080427495485/1388898569385410580/kituneko9765_head.png?ex=6862a817&is=68615697&hm=772e9e8cb0db9060641665ee1f4dc9157631b17aac5a13b25ec3d38406a4e878&" alt="skin_head">
+      <h1>キツねこ</h1>
+    </div>
     <p>あああ</p>
     <p>あいう。</p>
   </div>
