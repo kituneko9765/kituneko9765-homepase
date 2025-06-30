@@ -54,10 +54,18 @@
       margin: 0;
     }
 
+    .links {
+      display: flex;
+      flex-direction: column; /* ←ここが縦並びのポイント！ */
+      gap: 10px;
+      width: 100%;
+      align-items: center;
+    }
+
     .links a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
+      display: block;
+      width: 80%;
+      padding: 10px 0;
       background-color: #ffffff33;
       color: white;
       text-decoration: none;
