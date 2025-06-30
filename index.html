@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>kituneko9765</title>
+  <!-- Font Awesome CDN（アイコン用） -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
     html, body {
       margin: 0;
@@ -56,14 +59,17 @@
 
     .links {
       display: flex;
-      flex-direction: column; /* ←ここが縦並びのポイント！ */
+      flex-direction: column;
       gap: 10px;
       width: 100%;
       align-items: center;
     }
 
     .links a {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
       width: 80%;
       padding: 10px 0;
       background-color: #ffffff33;
@@ -71,10 +77,15 @@
       text-decoration: none;
       border-radius: 8px;
       transition: background-color 0.3s;
+      font-size: 16px;
     }
 
     .links a:hover {
       background-color: #ffffff55;
+    }
+
+    .links i {
+      font-size: 18px;
     }
   </style>
 </head>
@@ -85,9 +96,15 @@
       <h1>キツねこ</h1>
     </div>
     <div class="links">
-      <a href="https://x.com/kituneko9765" target="_blank">Twitter</a>
-      <a href="https://www.youtube.com/@kituneko9765" target="_blank">YouTube</a>
-      <a href="http://discordapp.com/users/863276065828503554" target="_blank">Discord</a>
+      <a href="https://x.com/kituneko9765" target="_blank">
+        <i class="fab fa-twitter"></i> Twitter
+      </a>
+      <a href="https://www.youtube.com/@kituneko9765" target="_blank">
+        <i class="fab fa-youtube"></i> YouTube
+      </a>
+      <a href="http://discordapp.com/users/863276065828503554" target="_blank">
+        <i class="fab fa-discord"></i> Discord
+      </a>
     </div>
   </div>
 </body>
