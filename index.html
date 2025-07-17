@@ -1,3 +1,6 @@
+export default {
+  async fetch(request, env, ctx) {
+    const html = `
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -117,7 +120,7 @@
       <h1>キツねこ</h1>
     </div>
 
-    <h2 class="my-links-title">My Links</h2> <!-- ← 追加ここ -->
+    <h2 class="my-links-title">My Links</h2>
 
     <div class="links">
       <a href="https://x.com/kituneko9765" target="_blank" class="twitter">
@@ -137,3 +140,10 @@
   </div>
 </body>
 </html>
+    `;
+
+    return new Response(html, {
+      headers: { "content-type": "text/html; charset=UTF-8" }
+    });
+  },
+};
